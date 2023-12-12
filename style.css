@@ -1,0 +1,74 @@
+html, body, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(229, 229, 229);
+}
+
+article, aside, section, header, footer, nav {
+    display: block;
+}
+
+main {
+    width: 720px;
+    margin: auto;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-shadow: 0 0 10px #666;
+}
+
+header {
+    background-color: rgb(255, 136, 0);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+}
+
+article {
+    clear: both;
+}
+
+article h1, article h2, article h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(255, 102, 51);
+    margin: 0;
+    line-height: 1.5em;
+}
+
+article h1 {font-size: 3em;}
+article h2 {font-size: 2em;}
+article h3 {font-size: 1.5em;}
+article p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: rgb(102, 102, 102);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section.textoApresentacao img {
+    float: left;
+    margin-right: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+section.textoMedio {
+    clear: both;
+} 
+
+/*Vai crescer a primeira letra de cada paragrafo.*/
+section.textoMedio p:first-of-type::first-letter {
+    font-size: 4em;
+    line-height: 0.8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
